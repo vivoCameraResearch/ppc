@@ -1,1 +1,315 @@
-hellow
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-55V1E709SK"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-55V1E709SK');
+  </script>
+
+  <meta charset="utf-8">
+  <meta name="description"
+    content="Photography Perspective Composition: Towards Aesthetic Perspective Recommendation. ">
+  <meta name="keywords" content="PVDiffusion">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Photography Perspective Composition: Towards Aesthetic Perspective Recommendation
+  </title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+  <script src="./static/js/script.js"></script>
+
+</head>
+
+<body>
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <!-- <img src="static/images/logo.png" style="height:90px"></img>  -->
+            <h1 class="title is-1 publication-title"><span
+                style="color: #91e0f4 ;font-weight: bolder;">Photography Perspective Composition</span>: Towards Aesthetic Perspective Recommendation</h1>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">  
+                <a href="https://scholar.google.com/citations?user=3GO1XjkAAAAJ&hl=zh-CN&oi=ao">Lujian Yao</a><sup>1, 2</sup>,</span>
+              <span class="author-block">
+                <a href="https://scholar.google.com/citations?user=zfYLLggAAAAJ&hl=zh-CN">Siming Zheng</a><sup>2</sup><sup>&dagger;</sup>,</span>
+              <span class="author-block">
+                <a href="https://scholar.google.com/citations?user=Be26Qu8AAAAJ&hl=en">Xinbin Yuan</a><sup>2</sup>,</span>
+              <span class="author-block">
+                <a href="">Zhuoxuan Cai</a><sup>2</sup>,</span>
+              <span class="author-block">
+                <a href="">Pu Wu</a><sup>2</sup>,</span>
+              <span class="author-block">
+                <a href="">Jinwei Chen</a><sup>2</sup>,</span>
+              <span class="author-block">
+                <a href="https://scholar.google.co.jp/citations?user=NVzQ87sAAAAJ&hl=zh-CN">Bo Li</a><sup>2</sup>,</span>
+              <span class="author-block">
+                <a href="https://pengtaojiang.github.io/">Peng-Tao Jiang</a><sup>2</sup><sup>&para;</sup>,</span>
+          </div>
+
+          <div class="subtitle is-size-5">
+            <sup>1</sup> East China University of Science and Technology &nbsp;
+            <sup>2</sup> vivo Mobile Communication Co., Ltd<br>
+            <sup>&dagger;</sup> Project Lead
+            <sup>&para;</sup> Corresponding Author
+          </div>
+
+          <!-- TODO: update paper link -->
+
+        </div>
+
+      </div>
+    </div>
+    </div>
+    </div>
+    </div>
+  </section>
+
+
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3"> <span
+            style="color: #000000 ;font-weight: bolder;">Abstract</span> </h2>
+          <div class="content has-text-justified">
+            <p>
+              Traditional photography composition approaches are dominated by 2D cropping-based methods. However, these methods fall short when scenes contain poorly arranged subjects. Professional photographers often employ perspective adjustment as a form of 3D recomposition, modifying the projected 2D relationships between subjects while maintaining their actual spatial positions to achieve better compositional balance. Inspired by this artistic practice, we propose photography perspective composition (PPC), extending beyond traditional cropping-based methods. However, implementing the PPC faces significant challenges: the scarcity of perspective transformation datasets and undefined assessment criteria for perspective quality. To address these challenges, we present three key contributions: (1) An automated framework for building PPC datasets through expert photographs. (2) A video generation approach that demonstrates the transformation process from suboptimal to optimal perspectives. (3) A perspective quality assessment (PQA) model constructed based on human performance. Our approach is concise and requires no additional prompt instructions or camera trajectories, helping and guiding ordinary users to enhance their composition skills.
+            </p>
+          </div>
+        </div>
+      </div>
+      <br>
+      <br>
+      <div class="column is-four-fifths"></div>
+      <div class="has-text-centered">
+        <h2 class="title is-3"> <span
+          style="color: #000000 ;font-weight: bolder;">PPC Performance in Single-Subject Scenarios</span> </h2>
+        <p>For single subjects scenarios, PPC enhances compositional by seamlessly integrating subjects with their surroundings.</p> <br>
+        <div>
+          <video class="video" loop playsinline autoPlay muted src="static/videos/single/single1.mp4" ></video>
+       </div>
+       <hr> 
+          <div>
+            <video class="video" loop playsinline autoPlay muted src="static/videos/single/single2.mp4"></video>
+         </div>
+         <hr> 
+         <div>
+          <video class="video" loop playsinline autoPlay muted src="static/videos/single/single3.mp4" ></video>
+    </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <div class="content has-text-justified">
+          </div>
+        </div>
+      </div>
+      <br>
+      <br>
+      <div class="column is-four-fifths"></div>
+      <div class="has-text-centered">
+        <h2 class="title is-3"> <span
+          style="color: #000000 ;font-weight: bolder;">PPC Performance in Multi-Subject Scenarios</span> </h2>
+        <p> For multi-subject scenes, PPC achieves balanced spatial arrangements to elevate overall visual aesthetics.</p> <br>
+        <div>
+          <video class="video" loop playsinline autoPlay muted src="static/videos/mul/mul1.mp4" ></video>
+       </div>
+       <hr> 
+          <div>
+            <video class="video" loop playsinline autoPlay muted src="static/videos/mul/mul2.mp4"></video>
+         </div>
+         <hr> 
+         <div>
+          <video class="video" loop playsinline autoPlay muted src="static/videos/mul/mul3.mp4" ></video>
+    </div>
+    </div>
+  </section>
+
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <div class="content has-text-justified">
+          </div>
+        </div>
+      </div>
+      <br>
+      <br>
+      <div class="column is-four-fifths"></div>
+      <div class="has-text-centered">
+        <h2 class="title is-3"> <span
+          style="color: #000000 ;font-weight: bolder;">PPC Performance in Wide Landscape</span> </h2>
+        <p>For landscape photography, PPC particularly enhancing balance and horizontal alignment.</p> <br>
+        <div>
+          <video class="video" loop playsinline autoPlay muted src="static/videos/hori/hori1.mp4" ></video>
+       </div>
+       <hr> 
+          <div>
+            <video class="video" loop playsinline autoPlay muted src="static/videos/hori/hori2.mp4"></video>
+         </div>
+         <hr> 
+         <div>
+          <video class="video" loop playsinline autoPlay muted src="static/videos/hori/hori3.mp4" ></video>
+    </div>
+    </div>
+  </section>
+
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <div class="content has-text-justified">
+          </div>
+        </div>
+      </div>
+      <br>
+      <br>
+      <div class="column is-four-fifths"></div>
+      <div class="has-text-centered">
+        <h2 class="title is-3"> <span
+          style="color: #000000 ;font-weight: bolder;">PPC Performance in UAV-like Scenarios</span> </h2>
+        <p>We discovered the applicability of PPC to UAV photography. PPC successfully identifies optimal views from drone-like perspectives, generating camera movements that adhere to compositional principles while maintaining aesthetic appeal.</p> <br>
+        <div>
+          <video class="video" loop playsinline autoPlay muted src="static/videos/uav/uav1.mp4" ></video>
+       </div>
+       <hr> 
+          <div>
+            <video class="video" loop playsinline autoPlay muted src="static/videos/uav/uav2.mp4"></video>
+         </div>
+         <hr> 
+         <div>
+          <video class="video" loop playsinline autoPlay muted src="static/videos/uav/uav3.mp4" ></video>
+    </div>
+    </div>
+  </section>
+  
+  <section class="section">
+    <div class="container is-max-desktop">
+      <div class="column is-four-fifths"></div>
+      <div class="has-text-centered">
+        <h2 class="title is-3"> <span
+          style="color: #000000 ;font-weight: bolder;">PPC maintains perspective consistency</span> </h2>
+        <br>  
+        <p>When presented with different suboptimal views of the same scene, PPC generates consistent optimal perspectives, maintaining coherence across different inputs.</p> <br>
+        <div>
+          <video class="video" loop playsinline autoPlay muted src="static/videos/consistance/consis1.mp4" ></video>
+       </div>
+       <hr> 
+       <div>
+        <video class="video" loop playsinline autoPlay muted src="static/videos/consistance/consis2.mp4" ></video>
+       </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  <br>
+  <br>
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-full-width">
+          <h2 class="title is-3"><span
+            style="color: #000000 ;font-weight: bolder;">Method Overview</span></h2>
+          <div class="content has-text-justified">
+            <img src="./static/images/pipeline1.png">
+
+            <p>Our pipeline takes a suboptimal perspective as input and generates a transformation video from the suboptimal to optimal perspective. This process can be modeled as an image-to-video (I2V) task. 
+              We utilize the last frame of the video as our final optimal perspective and design a method to guide human actions. First, we draw a guidance box (the red bbox) on the optimal perspective. Then, based on this box, along with the initial and final perspectives, we transform this box onto the original image using feature matching, creating a distorted box. As the user moves, this box gradually changes shape, approaching a rectangle when reaching the true optimal perspective. To simplify the process and accelerate computation, we only use traditional homography transformation. 
+              Additionally, we propose incorporating direct preference optimization (DPO) to align the model with human preferences. This approach encourages the exploration of aesthetically pleasing trajectories that may differ from GT, avoiding the limitation where GT-based optimization could discourage potentially superior compositional alternatives.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-full-width">
+          <h2 class="title is-3"><span
+            style="color: #000000 ;font-weight: bolder;">Automated Construction of PPC Dataset</span></h2>
+          <div class="content has-text-justified">
+            <img src="./static/images/pipeline2.png">
+            <p> (1) Data Source. We select multiple professional photography datasets, including datasets used in existing composition studies such as GAIC, SACD, FLMS, and FCDB. Furthermore, to expand our data volume, we incorporated Unsplash, currently the largest open-source professional photography dataset. 
+             (2) Perspective Transformation Generation. We adopt a 3D reconstruction approach. Our 3D reconstruction methodology mainly builds upon the ViewCrafter. The inputs consist of a well-composed image and a specified camera motion trajectory. Note that this trajectory can be random. By following this trajectory, we can generate a video sequence transitioning from the optimal to suboptimal perspective. Then, by reversing this video sequence, we obtain our desired training data. 
+              (3) Data Filtering. Given the limited performance of current reconstruction models, the generated video data needs to filter out artifacts including distortion, fixedness, and blur effects.
+              However, manual filtering for such a large dataset is impractical. Our tests showed that a single person can only filter about 3K videos per day, making it difficult to process large-scale samples. 
+               With the rapid advancement of vision language models (VLMs) in scene understanding and automated evaluation, we develop a perspective quality assessment (PQA) model to filter the generated data. </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  </script>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="content has-text-centered">
+        <!-- <a class="icon-link" href="">
+          <i class="fas fa-file-pdf"></i>
+        </a> -->
+        <!-- <a class="icon-link" href="" class="external-link" disabled>
+          <i class="fab fa-github"></i> -->
+        </a>
+      </div>
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content">
+            <p>
+              This project page is inspired by <a href="https://nerfies.github.io/">Nerfies</a> and <a href="https://instantsplat.github.io/">InstantSplat</a>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
